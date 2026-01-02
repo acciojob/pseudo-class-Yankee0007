@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+/* Main container styling */
+#container {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc; /* optional, just to visualize the container */
+  background-color: #f9f9f9;
+}
+
+/* Insert content before the container content */
+#container::before {
+  content: "This text is before the container content.";
+  display: block; /* makes it appear on a separate line */
+  color: #f00;
+  font-size: 20px;
+  margin-bottom: 10px; /* spacing between pseudo-element and main content */
+}
+
+/* Insert content after the container content */
+#container::after {
+  content: "This text is after the container content.";
+  display: block;
+  color: #f00;
+  font-size: 20px;
+  margin-top: 10px; /* spacing between main content and pseudo-element */
+}
